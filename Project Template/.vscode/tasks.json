@@ -1,0 +1,38 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "0.1.0",
+    "isShellCommand": true,
+    "showOutput": "always",
+    "windows": {   //Specifies which operating system your "tasks" are configured for. Can be used to for "linux" and "osx" configs.
+        "command": "cmd",
+        "args": ["/C"],
+        "suppressTaskName": true,
+        "isShellCommand": true,
+        "tasks": [
+            {
+                "taskName": "Build",
+                "args": [
+                    "mkdir Build & g++ -o Build/build main.cpp" //additional dependencies can added to compilation by prefixing them with "-l"
+                    //e.g. -lopengl32
+                ],
+                "suppressTaskName": true,
+                 "isBuildCommand": true
+            },
+            {
+                "taskName": "Clean",
+                "args": [
+                    "rm -r Build & mkdir Build"
+                ],
+                "suppressTaskName": true
+            },
+            {
+                "taskName": "Configure Project",
+                "args": [
+                    //Configure to Load dependencies into your build directory e.g. ".dll" files for .exe to run.
+                ],
+                "suppressTaskName": true
+            }
+        ]
+    }
+}

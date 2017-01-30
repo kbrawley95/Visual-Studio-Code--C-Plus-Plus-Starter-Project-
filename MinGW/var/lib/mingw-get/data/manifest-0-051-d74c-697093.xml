@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<package id="manifest-0-051-d74c-697093">
+    <release tarname="libpthreadgc-2.10-mingw32-pre-20160821-1-dev.tar.xz" />
+    <references>
+        <sysroot id="sysroot-0-002-a7c6-d7dbb5" />
+    </references>
+    <manifest>
+        <dir path="include" />
+        <file path="include/sched.h" />
+        <file path="include/pthread.h" />
+        <file path="include/semaphore.h" />
+        <file path="include/ptw32_errno.h" />
+        <file path="include/_ptw32.h" />
+        <dir path="lib" />
+        <file path="lib/libpthread.dll.a" />
+        <file path="lib/libpthread.a" />
+        <file path="lib/libpthreadGC-3.dll.a" />
+        <file path="lib/libpthreadGC-3.a" />
+    </manifest>
+</package>
