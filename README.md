@@ -24,6 +24,8 @@ Alternatively, you can debug the project by pressing F5 (CTRL + F5 run without d
 
 Your project should now be setup properly.
 
+**UPDATE: The following popular OpenGL libaries (SDL2, GLM, GLEW) have been added.**
+
 ---------------------------------------------------------------------------
 For more information on the materials provided, refer to the sources below:
 
@@ -31,3 +33,4 @@ For more information on the materials provided, refer to the sources below:
 >**MinGW (Minimalist GNU for Windows):** http://mingw.org/<br/>
 >**Debugging:** http://code.visualstudio.com/docs/editor/debugging<br/>
 >**Tasks:** http://code.visualstudio.com/docs/editor/tasks
+>**OpenGL Documentation:** https://www.opengl.org/
