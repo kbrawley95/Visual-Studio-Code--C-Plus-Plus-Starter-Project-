@@ -24,7 +24,22 @@ Alternatively, you can debug the project by pressing F5 (CTRL + F5 run without d
 
 Your project should now be setup properly.
 
-**UPDATE: The following popular OpenGL libaries (SDL2, GLM, GLEW) have been added.**
+**UPDATES:**
+
+1. **The following popular OpenGL libaries (SDL2, GLM, GLEW) have been added.**
+
+2. **Ensure that your editor is using the approrpiate integrated terminal by default.** 
+**This can be set through File-->Preferences-->Settings and adding one of the following configuration to your settings.json file:**
+  
+>**64-bit cmd if available, otherwise 32-bit**<br/>
+>"terminal.integrated.shell.windows": "C:\\Windows\\sysnative\\cmd.exe"<br/><br/>
+>**64-bit PowerShell if available, otherwise 32-bit**<br/>
+>"terminal.integrated.shell.windows": "C:\\Windows\\sysnative\\WindowsPowerShell\\v1.0\\powershell.exe"<br/><br/>
+>**Git Bash**
+>"terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe"<br/>><br/>
+>**Bash on Ubuntu (on Windows)**
+>"terminal.integrated.shell.windows": "C:\\Windows\\sysnative\\bash.exe"<br/
+
 
 ---------------------------------------------------------------------------
 For more information on the materials provided, refer to the sources below:
@@ -32,5 +47,6 @@ For more information on the materials provided, refer to the sources below:
 >**VS Portable:** http://gareth.flowers/vscode-portable/<br/>
 >**MinGW (Minimalist GNU for Windows):** http://mingw.org/<br/>
 >**Debugging:** http://code.visualstudio.com/docs/editor/debugging<br/>
->**Tasks:** http://code.visualstudio.com/docs/editor/tasks
->**OpenGL Documentation:** https://www.opengl.org/
+>**Integrated Terminal: https://code.visualstudio.com/docs/editor/integrated-terminal**<br/>
+>**Tasks:** http://code.visualstudio.com/docs/editor/tasks<br/>
+>**OpenGL Documentation:** https://www.opengl.org/<br/>
