@@ -34,5 +34,67 @@
                 "suppressTaskName": true
             }
         ]
+    },
+    "linux": {   //Specifies which operating system your "tasks" are configured for. Can be used to for "linux" and "osx" configs.
+        "command": "sh",
+        "args": ["-c"],
+        "suppressTaskName": true,
+        "isShellCommand": true,
+        "tasks": [
+            {
+                "taskName": "Build",
+                "args": [
+                    "mkdir Build & g++ -o Build/build main.cpp" //additional dependencies can added to compilation by prefixing them with "-l"
+                    //e.g. -lopengl32
+                ],
+                "suppressTaskName": true,
+                 "isBuildCommand": true
+            },
+            {
+                "taskName": "Clean",
+                "args": [
+                    "rm -r Build & mkdir Build"
+                ],
+                "suppressTaskName": true
+            },
+            {
+                "taskName": "Configure Project",
+                "args": [
+                    //Configure to Load dependencies into your build directory e.g. ".dll" files for .exe to run.
+                ],
+                "suppressTaskName": true
+            }
+        ]
+    },
+     "osx": {   //Specifies which operating system your "tasks" are configured for. Can be used to for "linux" and "osx" configs.
+        "command": "sh",
+        "args": ["-c"],
+        "suppressTaskName": true,
+        "isShellCommand": true,
+        "tasks": [
+            {
+                "taskName": "Build",
+                "args": [
+                    "mkdir Build & g++ -o Build/build main.cpp" //additional dependencies can added to compilation by prefixing them with "-l"
+                    //e.g. -lopengl32
+                ],
+                "suppressTaskName": true,
+                 "isBuildCommand": true
+            },
+            {
+                "taskName": "Clean",
+                "args": [
+                    "rm -r Build & mkdir Build"
+                ],
+                "suppressTaskName": true
+            },
+            {
+                "taskName": "Configure Project",
+                "args": [
+                    //Configure to Load dependencies into your build directory e.g. ".dll" files for .exe to run.
+                ],
+                "suppressTaskName": true
+            }
+        ]
     }
 }
