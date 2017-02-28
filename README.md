@@ -24,11 +24,13 @@ Alternatively, you can debug the project by pressing F5 (CTRL + F5 run without d
 
 Your project should now be setup properly.
 
-**UPDATES:**
+**UPDATES (Most Recent First):**
 
-1. **The following popular OpenGL libaries (SDL2, GLM, GLEW) have been added.**
+1. **The Template Project is now configured to generate an opengl context bound to a SDL2 window.**
 
-2. **Ensure that your editor is using the approrpiate integrated terminal by default.** 
+2. **The following popular OpenGL libaries (SDL2, GLM, GLEW) have been added.**
+
+3. **Ensure that your editor is using the approrpiate integrated terminal by default.** 
 **This can be set through File-->Preferences-->Settings and adding one of the following configuration to your settings.json file:**
   
 >**64-bit cmd if available, otherwise 32-bit**<br/>
@@ -39,6 +41,7 @@ Your project should now be setup properly.
 >"terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe"<br/>><br/>
 >**Bash on Ubuntu (on Windows)**
 >"terminal.integrated.shell.windows": "C:\\Windows\\sysnative\\bash.exe"<br/
+
 
 
 ---------------------------------------------------------------------------
