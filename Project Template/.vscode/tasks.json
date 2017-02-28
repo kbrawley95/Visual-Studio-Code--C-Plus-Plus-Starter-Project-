@@ -13,7 +13,7 @@
             {
                 "taskName": "Build",
                 "args": [
-                    "mkdir Build & g++ -o Build/build main.cpp" //additional dependencies can added to compilation by prefixing them with "-l"
+                    "mkdir Build & g++ -std=c++11 main.cpp -o Build/build -lopengl32 -lglew32 -lglew32mx -lglu32 -lmingw32 -lSDL2main -lSDL2 -lSDL2_image -lSDL2_ttf  " //additional dependencies can added to compilation by prefixing them with "-l"
                     //e.g. -lopengl32
                 ],
                 "suppressTaskName": true,
@@ -28,10 +28,10 @@
             },
             {
                 "taskName": "Configure Project",
+                "suppressTaskName": true,
                 "args": [
-                    //Configure to Load dependencies into your build directory e.g. ".dll" files for .exe to run.
-                ],
-                "suppressTaskName": true
+                    "mkdir Build & robocopy .SDK C:/MinGW /E & robocopy .SDK/bin Build"
+                ]
             }
         ]
     },
@@ -44,7 +44,7 @@
             {
                 "taskName": "Build",
                 "args": [
-                    "mkdir Build & g++ -o Build/build main.cpp" //additional dependencies can added to compilation by prefixing them with "-l"
+                    "mkdir Build & g++ -o Build/build main.cpp `sdl2-config --cflags --libs`" //additional dependencies can added to compilation by prefixing them with "-l"
                     //e.g. -lopengl32
                 ],
                 "suppressTaskName": true,
@@ -75,7 +75,7 @@
             {
                 "taskName": "Build",
                 "args": [
-                    "mkdir Build & g++ -o Build/build main.cpp" //additional dependencies can added to compilation by prefixing them with "-l"
+                    "mkdir Build & g++ -o Build/build main.cpp `sdl2-config --cflags --libs`" //additional dependencies can added to compilation by prefixing them with "-l"
                     //e.g. -lopengl32
                 ],
                 "suppressTaskName": true,
